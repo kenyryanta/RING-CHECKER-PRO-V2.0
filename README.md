@@ -4,73 +4,73 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![made-with-tkinter](https://img.shields.io/badge/Made%20with-Tkinter-red)](https://docs.python.org/3/library/tkinter.html)
 
-**Ring Checker Pro** adalah aplikasi desktop interaktif berbasis Python yang dirancang untuk menganalisis struktur aljabar yang dikenal sebagai *ring*. Aplikasi ini sangat berguna bagi mahasiswa, pengajar, dan peneliti di bidang matematika untuk memvalidasi dan menjelajahi properti-properti dari sebuah ring.
+**Ring Checker Pro** is an interactive Python desktop application designed to analyze algebraic structures known as *rings*. This application is especially useful for students, educators, and researchers in mathematics to validate and explore the properties of rings.
 
 
-*Tampilan antarmuka Ring Checker Pro dengan tema Forest-dark.*
-
----
-
-## ✨ Fitur Utama
-
--   🎨 **GUI Modern & Responsif**: Dilengkapi dengan tema gelap (Forest) dan terang (Azure) untuk kenyamanan visual.
--   🔢 **Tabel Operasi Interaktif**: Input tabel operasi penjumlahan dan perkalian dengan mudah.
--   🔬 **Analisis Properti Mendalam**:
-    -   Asosiativitas, Komutativitas, Distributivitas
-    -   Elemen Satuan (Unity) & Invers
-    -   Pembagi Nol (Zero Divisors)
--   🏷️ **Klasifikasi Ring**: Secara otomatis menentukan apakah ring termasuk **Field**, **Integral Domain**, **Division Ring**, dan lainnya.
--   💾 **Manajemen Data**:
-    -   Simpan dan muat kalkulasi ke/dari database **SQLite**.
-    -   Impor dan ekspor data dalam format **JSON**.
--   ⚡ **Analisis Multi-threaded**: Menganalisis ring di *background thread* agar antarmuka tetap responsif.
--   📚 **Contoh Bawaan**: Sudah termasuk contoh-contoh ring seperti $Z_3$, Boolean Ring, dan lainnya untuk memulai.
+*The Ring Checker Pro interface with the Forest-dark theme.*
 
 ---
 
-## 🚀 Instalasi dan Menjalankan Aplikasi
+## ✨ Key Features
 
-Pastikan Anda sudah memiliki **Python 3** terpasang di sistem Anda.
+-   🎨 **Modern & Responsive GUI**: Comes with dark (Forest) and light (Azure) themes for visual comfort.
+-   🔢 **Interactive Operation Tables**: Easily input the addition and multiplication operation tables.
+-   🔬 **In-depth Property Analysis**:
+    -   Associativity, Commutativity, Distributivity
+    -   Unity Element & Inverses
+    -   Zero Divisors
+-   🏷️ **Ring Classification**: Automatically determines if the ring is a **Field**, **Integral Domain**, **Division Ring**, and more.
+-   💾 **Data Management**:
+    -   Save and load calculations to/from an **SQLite** database.
+    -   Import and export data in **JSON** format.
+-   ⚡ **Multi-threaded Analysis**: Analyzes the ring in a background thread to keep the GUI responsive.
+-   📚 **Built-in Samples**: Includes sample rings like $Z_3$, Boolean Ring, and others to get you started.
 
-1.  **Clone Repository**
+---
+
+## 🚀 Installation and Usage
+
+Make sure you have **Python 3** installed on your system.
+
+1.  **Clone the Repository**
     ```bash
     git clone [https://github.com/your-username/ring-checker-pro.git](https://github.com/your-username/ring-checker-pro.git)
     cd ring-checker-pro
     ```
 
 2.  **Install Dependencies**
-    Aplikasi ini menggunakan `customtkinter`, `ttkthemes`, dan `sv-ttk`. Install semuanya dari file `requirements.txt`.
+    This application uses `customtkinter`, `ttkthemes`, and `sv-ttk`. Install all dependencies from the `requirements.txt` file.
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Jalankan Aplikasi**
-    Untuk menjalankan aplikasi, eksekusi skrip `final.py`:
+3.  **Run the Application**
+    To run the application, execute the `final.py` script:
     ```bash
     python final.py
     ```
 
 ---
 
-## 📖 Cara Menggunakan
+## 📖 How to Use
 
-1.  **Buka Aplikasi**: Jalankan skrip seperti petunjuk di atas.
-2.  **Tentukan Ukuran Ring**: Pilih ukuran ring yang diinginkan (misalnya, 3 untuk ring dengan 3 elemen: A, B, C).
-3.  **Generate Tabel**: Klik tombol **'Generate Table'**.
-4.  **Isi Tabel Operasi**: Lengkapi tabel penjumlahan dan perkalian. Pastikan setiap entri adalah elemen ring yang valid (misalnya, A, B, C).
-5.  **Analisis**: Klik **'Analyze Ring'** untuk melihat hasil analisis properti dan klasifikasi ring di panel kanan.
-6.  **Gunakan Sampel**: Jelajahi contoh-contoh ring yang sudah ada di tab **'Samples'**.
-7.  **Simpan & Muat**: Gunakan menu `File` untuk menyimpan, memuat, mengimpor, atau mengekspor pekerjaan Anda.
+1.  **Launch the App**: Run the script as instructed above.
+2.  **Set Ring Size**: Choose the desired ring size (e.g., 3 for a ring with 3 elements: A, B, C).
+3.  **Generate Tables**: Click the **'Generate Table'** button.
+4.  **Fill in the Operation Tables**: Complete the addition and multiplication tables. Ensure each entry is a valid ring element (e.g., A, B, C).
+5.  **Analyze**: Click **'Analyze Ring'** to see the property analysis and ring classification in the right-hand panel.
+6.  **Use Samples**: Explore the pre-built ring examples in the **'Samples'** tab.
+7.  **Save & Load**: Use the `File` menu to save, load, import, or export your work.
 
 ---
 
 ## ⌨️ Keyboard Shortcuts
 
-| Shortcut | Aksi                  |
-| :------- | :-------------------- |
-| `Ctrl+N` | Kalkulasi Baru        |
-| `Ctrl+S` | Simpan Kalkulasi      |
-| `F11`    | Toggle Fullscreen Mode|
+| Shortcut | Action                 |
+| :------- | :--------------------- |
+| `Ctrl+N` | New Calculation        |
+| `Ctrl+S` | Save Calculation       |
+| `F11`    | Toggle Fullscreen Mode |
 
-> **📝 Catatan Penting**
-> Pastikan semua sel dalam tabel operasi terisi dengan benar. Setiap entri harus merupakan elemen ring yang telah didefinisikan (A, B, C, dst.). Input yang tidak valid akan menyebabkan analisis gagal.
+> **📝 Important Note**
+> Ensure that all cells in the operation tables are filled correctly. Each entry must be a valid, defined ring element (A, B, C, etc.). Invalid input will cause the analysis to fail.
